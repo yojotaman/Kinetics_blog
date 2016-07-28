@@ -2,7 +2,12 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+	color:#515151;
 }
+a {
+	color: #515151;
+}
+
 header {
 	background: #FAFAFA;
 	height: 60px;
@@ -43,7 +48,7 @@ header img {
 	transform: scale(.9);
 }
 .button.verde {
-	background: #00FF40;
+	background: #7dcd40;
 }
 
 nav {
@@ -94,19 +99,25 @@ nav li:last-child:after {
 h1 {
 	margin: 0;
 	font-weight: 600;
+	margin-bottom: 10px;
+
 }
 .portada {
 	/*border: 2px solid #00FF40;*/
 	position: relative;
+	margin-bottom: 20px;
 }
 .portada .description {
-	background: rgba(255, 255, 255, .7);
+	background: rgba(255, 255, 255, .6);
 	position: absolute;
 	bottom: 30px;
 	left: 20px;
 	padding: 20px;
 	font-weight: 600;
 
+}
+.portada .description h1 {
+	padding-bottom:10px; 
 }
 
 .blog {
@@ -121,7 +132,66 @@ h1 {
 }
 .blog-items h3 {
 	font-weight: 600;
+	margin: 10px 0 15px;
 }
 .item-blog {
 	width: 300px;
+}
+
+.item-blog .description {
+	margin-bottom: 15px;
+}
+
+.paginador {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	padding: 20px 0;
+}
+.paginador ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 15px;
+}
+.paginador li {
+	background: #eaeaea;
+	height: 40px;
+	line-height: 40px;
+	border: solid 1px gray;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+.paginador li.selected {
+	border-color:transparent;
+	background: white;
+}
+.paginador a {
+	padding: 0 10px;
+	text-decoration: none;
+	display: block;
+	height: inherit;
+	
+}
+.autor {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	border-top: 1px solid gray;
+	padding-top: 15px;
+}
+.autor img {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.autor p {
+	
+	margin: 0;
+	font-size: 14px;
+
+}
+.autor span {
+	font-size: 14px;
 }
